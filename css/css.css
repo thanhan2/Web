@@ -1,0 +1,245 @@
+﻿body {
+    padding-top: 70px;
+    background-color: lightpink;
+}
+
+.nav-link:hover {
+    background-color: lightpink;
+    color: white;
+}
+
+a.nav-link {
+    color: lightpink;
+    font-size: 20px;
+}
+
+a.dropdown-item:hover {
+    background-color: lightpink;
+    color: white;
+}
+
+a.dropdown-item {
+    color: lightpink;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 10px lightpink;
+}
+
+.lead , .display-5{
+    color:orangered;
+    font-weight:bold;
+}
+
+@keyframes imagerotate {
+    0% {
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#image:hover {
+    animation-name: imagerotate;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+.snow-bg {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: auto;
+    background-image: url('../img/sakura-1-1.png'), url('../img/sakura-2.png');
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+
+/*@media (max-width: 768px) {
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product,
+    .woocommerce-page[class*=columns-] ul.products li.product,
+    .woocommerce[class*=columns-] ul.products li.product {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin: 0 7em;
+    }
+}*/
+
+.popup {
+    width: 200px;
+    line-height: 25px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-top:10px;
+    border-radius:10px;
+}
+@keyframes colorchange{
+    0% {
+       color:red;
+    }
+    25%{
+        color:yellow;
+    }
+    75% {
+        color: green;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+.popup p{
+    color:hotpink;
+    font-size: 25px;
+    animation-name:colorchange;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+.chatbox {
+    background-color: lightpink;
+    width: 350px;
+    height: 400px;
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    border:3px solid white;
+    border-radius:10px;
+    background-image:url("../img/chatbox.jpg");
+    background-size:contain;
+}
+.chattop {
+    width: 100%;
+    height: 30px;
+    border-bottom: 3px dotted hotpink;
+    background-color:white;
+    opacity:0.8;
+    text-align:left;
+}
+.chattop p{
+    color:hotpink;
+    margin-left:10px;
+    font-weight:bold;
+}
+.chatcontent{
+    width:100%;
+    height:290px;
+    border-bottom:3px dotted hotpink;
+    padding-top:200px;
+}
+.message{
+    border-radius:10px;
+    background-color:white;
+    padding-left:10px;
+    color:hotpink;
+}
+.chatbottom {
+    width: 100%;
+    height: 30px;
+    padding-top:20px;
+    padding-left:10px;
+}
+#chatbutton {
+    width: 100px;
+    margin-left: 5px;
+    border-radius:10px;
+    background-color:lightpink;
+    border:2px solid white; 
+    color:white;
+}
+#chatfield:focus{
+   box-shadow: 0px 0px 10px lightpink;
+}
+#chatfield{
+    border:none;
+}
+#chatbox{
+    display:none;
+}
+
+
+/*Danh mục CSS*/
+
+#danhmuc{
+    font-family: 'Courier', sans-serif;
+    font-weight:bold;
+    color:white;
+}
+#TitleCart {
+    font-family: 'Courier', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size:40px;
+}
+.list-group-item {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    text-align: center;
+    color: hotpink;
+    text-decoration: none;
+}
+.list-group-item:hover {
+    background-color: pink;
+    font-weight:bold;
+    color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+    text-decoration:none;
+}
+#listcurrent {
+    background-color: hotpink;
+    font-weight:bold;
+    color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+    text-shadow: 0px 0px 10px yellow;
+}
+.card-title a{
+    color:hotpink;
+}
+/* add cart*/
+.addCart {
+    border: none;
+    background-color: hotpink;
+    margin:2px;
+    color: white;
+    float: right;
+}
+.addCart:hover{
+    background-color: white;
+    margin:0px;
+    color:hotpink;
+    border: 2px solid hotpink;
+}
